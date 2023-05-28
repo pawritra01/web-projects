@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Story } from "../entities/Board";
+	import type { Story } from "@prisma/client";
 
     let hover = false;
 
@@ -30,7 +30,7 @@
     on:dragend={handleDragEnd}
 >
     <h2>{story.title}</h2>
-    <div>{story.startedAt}</div>
+    <div>{story.createdAt}</div>
 </div>
 
 
